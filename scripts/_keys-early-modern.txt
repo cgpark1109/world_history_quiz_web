@@ -1,0 +1,148 @@
+year	1488
+year	1498
+year	1501
+year	1511
+year	1519
+year	1521
+year	1526
+year	1534
+year	1555
+year	1571
+year	1572
+year	1598
+year	1600
+year	1603
+year	1610
+year	1618
+year	1620
+year	1633
+year	1639
+year	1644
+year	1648
+year	1651
+year	1658
+year	1661
+year	1670
+year	1673
+year	1683
+year	1690
+year	1699
+year	1701
+year	1703
+year	1707
+year	1713
+year	1720
+year	1721
+year	1733
+year	1739
+year	1740
+year	1748
+year	1756
+year	1763
+year	1765
+year	1772
+year	1773
+year	1775
+year	1781
+year	1793
+year	1798
+event	Abolition of Feudal Privileges
+event	Acts of Union
+person	Adam Smith
+person	Akbar
+event	Anglo Dutch Wars
+person	Anne Hutchinson
+person	Antoine Lavoisier
+event	Asiento System
+person	Aurangzeb
+event	Bacon's Rebellion
+person	Bartolome de las Casas
+event	Battle of Lepanto
+event	Battle of Plassey
+event	Battle of Sekigahara
+event	Bill of Rights Settlement
+event	Boston Tea Party
+person	Cardinal Mazarin
+person	Cardinal Richelieu
+person	Catherine the Great
+person	Christiaan Huygens
+event	Colonial Mita Draft Labor
+event	Counter Reformation
+person	Edmond Halley
+event	Eighty Years War
+event	Enlightenment Debate Culture
+event	Fall of Tenochtitlan
+person	Ferdinand Magellan
+event	First Battle of Panipat
+event	First Partition of Poland
+person	Francis Bacon
+person	Frederick II of Prussia
+event	French and Indian War
+person	George Washington
+person	Gerardus Mercator
+event	Great Northern War Reforms
+event	Haitian Revolution
+person	Hugo Grotius
+event	Italian Campaign of Napoleon
+person	Jahanara Begum
+person	James Cook
+person	Jan Pieterszoon Coen
+event	Javanese Wars of Succession
+person	Jean Baptiste Colbert
+person	Jean Bodin
+person	Johannes Kepler
+person	John Locke
+person	Kangxi Emperor
+event	Magellan Elcano Circumnavigation
+person	Maria Sibylla Merian
+event	Masaniello Revolt
+person	Matteo Ricci
+person	Michelangelo
+event	Mita System
+person	Moliere
+person	Montesquieu
+person	Nader Shah
+person	Nicolaus Copernicus
+person	Nurhaci
+person	Oda Nobunaga
+person	Ole Romer
+person	Oliver Cromwell
+event	Onin War
+event	Ottoman Persian Peace Settlement of the 1730s
+event	Ottoman Safavid Wars
+event	Peace of Augsburg
+event	Peace of Westphalia
+event	Penal Laws
+event	Plague Riot and Frontier Rebellions
+event	Portuguese Restoration War
+event	Pugachev Rebellion
+event	Qing Conquest of Beijing
+event	Rebellion of Tupac Amaru II
+person	Rembrandt
+person	Rene Descartes
+person	Robert Boyle
+event	Russo Turkish War of 1768 to 1774
+event	Salem Witch Trials
+person	Samuel de Champlain
+person	Shah Jahan
+event	Shimabara Rebellion and Sakoku Enforcement
+event	Siege of Vienna
+event	Somerset Case
+event	Stamp Act Crisis
+person	Thomas Hobbes
+person	Tokugawa Ieyasu
+person	Toussaint Louverture
+person	Toyotomi Hideyoshi
+event	Treaty of Karlowitz Settlement
+event	Treaty of Paris of 1783
+event	Treaty of Tordesillas
+event	Treaty of Utrecht
+person	Tycho Brahe
+person	Vasco da Gama
+person	Voltaire
+person	Wang Lun
+event	War of American Independence
+event	War of Austrian Succession
+event	White Lotus Rebellion
+event	Williamite War in Ireland
+person	Zheng Chenggong

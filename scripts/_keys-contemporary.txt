@@ -1,0 +1,133 @@
+year	1945
+year	1947
+year	1948
+year	1949
+year	1953
+year	1955
+year	1956
+year	1960
+year	1961
+year	1962
+year	1965
+year	1966
+year	1967
+year	1968
+year	1971
+year	1972
+year	1973
+year	1974
+year	1975
+year	1976
+year	1978
+year	1979
+year	1980
+year	1982
+year	1985
+year	1986
+year	1987
+year	1989
+year	1990
+year	1991
+year	1993
+year	1994
+year	1997
+event	Afghan Mujahideen Resistance
+person	Ahmed Ben Bella
+person	Alexander Dubcek
+event	Algerian War of Independence
+person	Alija Izetbegovic
+person	Amilcar Cabral
+person	Andrei Sakharov
+person	Anwar Sadat
+event	Apartheid
+event	Asian Financial Crisis
+event	August Coup in the Soviet Union
+person	Augusto Pinochet
+person	Aung San Suu Kyi
+event	Bandung Conference
+person	Benazir Bhutto
+event	Berlin Blockade
+event	Bosnian War
+person	Boutros Boutros-Ghali
+event	Cambodian Genocide Era Conflict
+event	Camp David Accords
+event	Charter 77 Movement
+event	Construction of the Berlin Wall
+event	Cultural Revolution
+event	Dissolution of the Soviet Union
+event	East Timor Independence Referendum
+person	Eduard Shevardnadze
+event	End of Apartheid Transition
+person	Erich Honecker
+event	Falklands War
+person	Franjo Tudman
+person	Gamal Abdel Nasser
+person	George H. W. Bush
+person	Golda Meir
+event	Good Friday Agreement
+event	Great Leap Forward
+event	Gulf War
+person	Hafizullah Amin
+event	Helsinki Process
+person	Henry Kissinger
+person	Ho Chi Minh
+event	Hungarian Uprising
+person	Indira Gandhi
+event	Indonesian Anti-Communist Purges
+event	INF Treaty
+event	Iran-Iraq War
+person	Jomo Kenyatta
+person	Josip Broz Tito
+person	Julius Nyerere
+person	Kofi Annan
+person	Kwame Nkrumah
+event	Lebanese Civil War
+person	Lech Walesa
+person	Lee Kuan Yew
+person	Lee Teng-hui
+person	Leonid Brezhnev
+event	Malagasy Uprising of 1947
+event	Marshall Plan
+event	Mau Mau Uprising
+person	Mohammad Khatami
+event	Monday Demonstrations
+event	Mozambican War of Independence
+person	Muhammad Zia-ul-Haq
+person	Nicolae Ceausescu
+event	Nigerian Civil War
+event	Oil Crisis of 1973
+event	Operation Ajax
+event	Operation Danube
+person	Park Chung-hee
+person	Patrice Lumumba
+person	Pol Pot
+event	Revolutions of 1989
+person	Ruhollah Khomeini
+event	Rwandan Genocide
+person	Saddam Hussein
+event	SEATO
+event	Six-Day War
+person	Slobodan Milosevic
+event	Solidarity Movement
+event	Soviet-Afghan War
+event	Spanish Democratic Transition
+person	Steve Biko
+event	Suez Crisis
+person	Suharto
+person	Thabo Mbeki
+event	Tiananmen Square Protests and Crackdown
+event	Truman Doctrine
+event	Truth and Reconciliation Commission
+event	Universal Declaration of Human Rights
+person	Vaclav Havel
+person	Vaclav Klaus
+event	Warsaw Pact
+event	Warsaw Pact Invasion of Czechoslovakia
+person	Willy Brandt
+person	Wojciech Jaruzelski
+person	Xanana Gusmao
+person	Yasser Arafat
+event	Yom Kippur War
+person	Yuri Andropov
+person	Zhao Ziyang
+person	Zhou Enlai

@@ -1,0 +1,180 @@
+541	person	1	Napoleon Bonaparte	나폴레옹 보나파르트	Who led France during the Napoleonic Wars and became emperor?
+542	person	1	Adolf Hitler	아돌프 히틀러	Who led Nazi Germany during World War II?
+543	person	1	Winston Churchill	윈스턴 처칠	Who was the British prime minister famous for wartime speeches against Nazi Germany?
+544	person	1	Franklin D. Roosevelt	프랭클린 D. 루스벨트	Who was the U.S. president through most of the Great Depression and World War II?
+545	person	1	Joseph Stalin	이오시프 스탈린	Who ruled the Soviet Union through rapid industrialization and World War II?
+546	person	1	Vladimir Lenin	블라디미르 레닌	Who led the Bolsheviks in the 1917 Russian Revolution?
+547	person	1	Mahatma Gandhi	마하트마 간디	Who led India's nonviolent movement against British rule?
+548	person	1	Mao Zedong	마오쩌둥	Who led the Chinese Communist movement and later founded the PRC?
+549	person	1	Otto von Bismarck	오토 폰 비스마르크	Who unified Germany through Realpolitik in the 19th century?
+550	person	1	Abraham Lincoln	에이브러햄 링컨	Who led the United States during the Civil War and issued the Emancipation Proclamation?
+551	person	2	Charles Darwin	찰스 다윈	Who developed the theory of evolution by natural selection?
+552	person	2	Karl Marx	카를 마르크스	Who co-authored The Communist Manifesto and wrote Das Kapital?
+553	person	2	Benito Mussolini	베니토 무솔리니	Who founded fascist rule in Italy before World War II?
+554	person	2	Woodrow Wilson	우드로 윌슨	Who promoted the Fourteen Points after World War I as U.S. president?
+555	person	2	Mustafa Kemal Ataturk	무스타파 케말 아타튀르크	Who founded modern Turkey after the collapse of the Ottoman Empire?
+556	person	2	Queen Victoria	빅토리아 여왕	Who reigned over Britain for much of the 19th century and the empire's expansion?
+557	person	2	Kaiser Wilhelm II	빌헬름 2세	Who was German emperor during World War I?
+558	person	2	Emperor Meiji	메이지 천황	Who began the Meiji Restoration as Japan's symbolic emperor?
+559	person	2	Sun Yat-sen	쑨원	Who is called the father of modern China and led the 1911 revolution movement?
+560	person	2	Theodore Roosevelt	시어도어 루스벨트	Who was the U.S. president associated with progressive reforms and the Panama Canal era?
+561	person	3	Giuseppe Garibaldi	주세페 가리발디	Who fought for Italian unification as a revolutionary general?
+562	person	3	Simon Bolivar	시몬 볼리바르	Who led independence campaigns across northern South America?
+563	person	3	Florence Nightingale	플로렌스 나이팅게일	Who organized modern nursing during the Crimean War?
+564	person	3	Alfred von Schlieffen	알프레트 폰 슐리펜	Who proposed the Schlieffen Plan for Germany before World War I?
+565	person	3	Georges Clemenceau	조르주 클레망소	Who was the French leader known as the Tiger during World War I diplomacy?
+566	person	3	Leon Trotsky	레온 트로츠키	Who organized the Red Army during the Russian Civil War?
+567	person	3	Chiang Kai-shek	장제스	Who led the Nationalist government of China for much of the interwar era?
+568	person	3	Ho Chi Minh	호치민	Who became a leading anti-colonial figure in Vietnam and later led the Viet Minh?
+569	person	3	Emiliano Zapata	에밀리아노 사파타	Who became a symbol of agrarian revolution during the Mexican Revolution?
+570	person	3	Menelik II	메넬리크 2세	Who transformed Ethiopia's military and defeated Italy at Adwa?
+571	person	4	Wilhelm I	빌헬름 1세	Who proclaimed the German Empire in 1871 as Prussian king?
+572	person	4	Grigory Zinoviev	그리고리 지노비예프	Who led the Bolshevik government in Petrograd after Lenin's death struggle period but was later sidelined?
+573	person	4	Yuan Shikai	위안스카이	Who was China's warlord president before the full Nationalist consolidation?
+574	person	4	Faisal I	파이살 1세	Who led Arab forces with British support during the Arab Revolt in World War I?
+575	person	4	Charles de Gaulle	샤를 드골	Who headed Free France during World War II after 1940?
+576	person	4	Erwin Rommel	에르빈 롬멜	Who commanded Germany's Afrika Korps in North Africa?
+577	person	4	Douglas MacArthur	더글러스 맥아더	Who served as commander of Allied forces in the Southwest Pacific during World War II?
+578	person	4	Hideki Tojo	도조 히데키	Who led Japan's government as prime minister during much of the Pacific War?
+579	person	4	Isoroku Yamamoto	야마모토 이소로쿠	Who was the Japanese admiral behind the Pearl Harbor attack planning?
+580	person	4	George S. Patton	조지 S. 패튼	Who was one of the most prominent U.S. generals in Europe during World War II?
+581	person	5	Camillo Cavour	카밀로 카보우르	Who guided Piedmont-Sardinia diplomacy for Italian unification as prime minister?
+582	person	5	Theobald von Bethmann-Hollweg	테오발트 폰 베트만홀베크	Who was Germany's chancellor at the outbreak of World War I?
+583	person	5	Gavrilo Princip	가브릴로 프린치프	Who assassinated Archduke Franz Ferdinand in 1914?
+584	person	5	Rosa Luxemburg	로자 룩셈부르크	Who was a Marxist revolutionary killed during the German upheavals of 1919?
+585	person	5	Alexander Kerensky	알렉산드르 케렌스키	Who headed Russia's Provisional Government before the Bolshevik takeover?
+586	person	5	Friedrich Ebert	프리드리히 에베르트	Who served as the first president of Germany's Weimar Republic?
+587	person	5	Saad Zaghloul	사아드 자글룰	Who became a key Egyptian nationalist leader demanding independence from Britain?
+588	person	5	Sukarno	수카르노	Who led Indonesian nationalism and proclaimed independence in 1945?
+589	person	5	Aung San	아웅산	Who is remembered as a leading Burmese independence hero assassinated in 1947?
+590	person	5	John Dube	존 두베	Who challenged segregation in colonial South Africa and later became ANC president-general?
+591	person	6	Lala Lajpat Rai	랄라 라지파트 라이	Who was an Indian nationalist known as Punjab Kesari and associated with anti-colonial activism?
+592	person	6	Jose Rizal	호세 리살	Who wrote Noli Me Tangere and inspired Philippine nationalism before 1900?
+593	person	6	Emilio Aguinaldo	에밀리오 아기날도	Who led Filipino resistance and later became the first president of the Philippines?
+594	person	6	Abd el-Krim	압드 엘 크림	Who led anti-colonial resistance in the Rif War against Spain and France?
+595	person	6	Henry Sylvester Williams	헨리 실베스터 윌리엄스	Who promoted Pan-African thought and organized the first Pan-African Conference of 1900?
+596	person	6	Kwame Nkrumah	콰메 은크루마	Who was a major anti-colonial thinker and first president of independent Ghana?
+597	person	6	John A. Hobson	존 A. 홉슨	Who authored Imperialism A Study and criticized global empire economics?
+598	person	6	Edmund Dene Morel	에드먼드 덴 모렐	Who documented the Congo atrocities in King Leopold's Rule in Africa?
+599	person	6	Gopal Krishna Gokhale	고팔 크리슈나 고칼레	Who became a leading Indian constitutional reform advocate in the early twentieth century?
+600	person	6	Ahmed Urabi	아흐메드 우라비	Who was an Egyptian anti-colonial figure known for criticism of British occupation and exile?
+601	year	1	1815 AD	서기 1815년	In what year did the Battle of Waterloo occur?
+602	year	1	1914 AD	서기 1914년	In what year did World War I begin?
+603	year	1	1917 AD	서기 1917년	In what year did the Russian Revolution begin?
+604	year	1	1939 AD	서기 1939년	In what year did World War II begin in Europe?
+605	year	1	1945 AD	서기 1945년	In what year did World War II end?
+606	year	1	1814 AD	서기 1814년	In what year did the Congress of Vienna convene?
+607	year	1	1929 AD	서기 1929년	In what year did the Great Depression begin with the Wall Street crash?
+608	year	1	1861 AD	서기 1861년	In what year did the U.S. Civil War begin?
+609	year	1	1868 AD	서기 1868년	In what year did the Meiji Restoration begin?
+610	year	1	1804 AD	서기 1804년	In what year was Napoleon crowned emperor?
+611	year	2	1813 AD	서기 1813년	In what year did Napoleon suffer a major defeat at Leipzig?
+612	year	2	1830 AD	서기 1830년	In what year did the July Revolution occur in France?
+613	year	2	1848 AD	서기 1848년	In what year did the Revolutions of 1848 spread across Europe?
+614	year	2	1870 AD	서기 1870년	In what year did Italy complete unification with Rome?
+615	year	2	1871 AD	서기 1871년	In what year was the German Empire proclaimed at Versailles?
+616	year	2	1905 AD	서기 1905년	In what year did Japan defeat Russia in the Russo Japanese War settlement?
+617	year	2	1911 AD	서기 1911년	In what year did the Chinese Xinhai Revolution overthrow the Qing dynasty?
+618	year	2	1919 AD	서기 1919년	In what year did the Paris Peace Conference begin?
+619	year	2	1919 AD	서기 1919년	In what year did the Treaty of Versailles get signed?
+620	year	2	1933 AD	서기 1933년	In what year did Hitler become chancellor of Germany?
+621	year	3	1804 AD	서기 1804년	In what year did Haiti declare independence?
+622	year	3	1821 AD	서기 1821년	In what year did the Greek War of Independence begin?
+623	year	3	1839 AD	서기 1839년	In what year did the First Opium War begin?
+624	year	3	1850 AD	서기 1850년	In what year did the Taiping Rebellion begin?
+625	year	3	1857 AD	서기 1857년	In what year did the Indian Rebellion against British rule erupt?
+626	year	3	1865 AD	서기 1865년	In what year did the American Civil War end?
+627	year	3	1884 AD	서기 1884년	In what year did the Berlin Conference begin?
+628	year	3	1899 AD	서기 1899년	In what year did the Boxer Rebellion begin in China?
+629	year	3	1908 AD	서기 1908년	In what year did the Ottoman constitutional Young Turk Revolution occur?
+630	year	3	1922 AD	서기 1922년	In what year did Mussolini's March on Rome occur?
+631	year	4	1814 AD	서기 1814년	In what year did the Congress of Vienna convene?
+632	year	4	1830 AD	서기 1830년	In what year did Belgium become independent?
+633	year	4	1853 AD	서기 1853년	In what year did the Crimean War begin?
+634	year	4	1869 AD	서기 1869년	In what year did the Suez Canal open?
+635	year	4	1871 AD	서기 1871년	In what year did the Paris Commune occur?
+636	year	4	1894 AD	서기 1894년	In what year did the First Sino Japanese War begin?
+637	year	4	1904 AD	서기 1904년	In what year did the Russo Japanese War begin?
+638	year	4	1917 AD	서기 1917년	In what year did the Balfour Declaration get issued?
+639	year	4	1925 AD	서기 1925년	In what year did the Locarno Treaties get signed?
+640	year	4	1936 AD	서기 1936년	In what year did Germany remilitarize the Rhineland?
+641	year	5	1825 AD	서기 1825년	In what year did the Decembrist Revolt occur in Russia?
+642	year	5	1842 AD	서기 1842년	In what year did the Treaty of Nanking end the First Opium War?
+643	year	5	1889 AD	서기 1889년	In what year did Japan promulgate the Meiji Constitution?
+644	year	5	1898 AD	서기 1898년	In what year did the Spanish American War begin?
+645	year	5	1899 AD	서기 1899년	In what year did the Boer War begin in southern Africa?
+646	year	5	1894 AD	서기 1894년	In what year did the Dreyfus Affair begin in France?
+647	year	5	1916 AD	서기 1916년	In what year did the Irish Easter Rising occur?
+648	year	5	1919 AD	서기 1919년	In what year did the Weimar Republic begin?
+649	year	5	1931 AD	서기 1931년	In what year did Japan invade Manchuria?
+650	year	5	1935 AD	서기 1935년	In what year did Italy invade Ethiopia?
+651	year	6	1819 AD	서기 1819년	In what year did the Carlsbad Decrees get issued in the German Confederation?
+652	year	6	1839 AD	서기 1839년	In what year did the Opium trade commissioner Lin Zexu destroy opium at Humen?
+653	year	6	1854 AD	서기 1854년	In what year did the Treaty of Kanagawa open relations between Japan and the United States?
+654	year	6	1878 AD	서기 1878년	In what year did Germany pass the Anti Socialist Laws under Bismarck?
+655	year	6	1904 AD	서기 1904년	In what year did the Entente Cordiale get signed?
+656	year	6	1911 AD	서기 1911년	In what year did the Agadir Crisis occur?
+657	year	6	1920 AD	서기 1920년	In what year did the Treaty of Sevres get signed for the Ottoman Empire?
+658	year	6	1923 AD	서기 1923년	In what year did Ataturk proclaim the Republic of Turkey?
+659	year	6	1934 AD	서기 1934년	In what year did the Long March begin in China?
+660	year	6	1939 AD	서기 1939년	In what year did Germany and the Soviet Union sign the Molotov Ribbentrop Pact?
+661	event	1	Battle of Waterloo	워털루 전투	What decisive 1815 battle ended Napoleon's rule in Europe?
+662	event	1	World War I	제1차 세계대전	What global conflict from 1914 to 1918 involved trench warfare in Europe?
+663	event	1	World War II	제2차 세계대전	What global conflict from 1939 to 1945 involved Axis and Allied powers?
+664	event	1	Russian Revolution	러시아 혁명	What revolution in 1917 brought the Bolsheviks to power in Russia?
+665	event	1	Holocaust	홀로코스트	What genocide by Nazi Germany targeted Jews and other groups?
+666	event	1	Great Depression	대공황	What economic crisis began in 1929 and spread globally?
+667	event	1	Industrial Revolution	산업혁명	What transformation in production and labor spread from Britain in the 19th century?
+668	event	1	Meiji Restoration	메이지 유신	What reform movement in Japan ended the shogunate and modernized the state?
+669	event	1	German Unification	독일 통일 운동	What movement sought to unite and create a single German nation state in the 19th century?
+670	event	1	Italian Unification	이탈리아 통일 운동	What movement united Italian states into one kingdom in the 19th century?
+671	event	2	Battle of Tsushima	쓰시마 해전	What naval event in 1905 marked Japan's major victory over Russia?
+672	event	2	Xinhai Revolution	신해혁명	What anti Qing uprising in 1911 ended imperial rule in China?
+673	event	2	Marco Polo Bridge Incident	루거우차오 사건	What 1937 incident expanded the Sino Japanese War into full scale conflict?
+674	event	2	Anschluss	안슐루스	What event in 1938 united Germany and Austria under Nazi rule?
+675	event	2	Attack on Pearl Harbor	진주만 공격	What 1941 attack brought the United States into World War II?
+676	event	2	D Day Normandy Landings	노르망디 상륙작전	What 1944 operation opened a Western Front in Nazi occupied France?
+677	event	2	Treaty of Versailles	베르사유 조약	What agreement after World War I imposed heavy terms on Germany?
+678	event	2	Italian Fascism	이탈리아 파시즘	What ideological movement in interwar Italy emphasized authoritarian nationalism and corporatism?
+679	event	2	Salt March	소금 행진	What civil disobedience campaign in 1930 challenged British salt monopoly in India?
+680	event	2	Greater East Asia Co Prosperity Sphere	대동아공영권	What Japanese imperial policy sought regional domination under wartime rhetoric of co prosperity?
+681	event	3	Indian Rebellion of 1857	인도 대반란	What uprising in 1857 challenged British rule in India?
+682	event	3	First Opium War	제1차 아편전쟁	What conflict from 1839 to 1842 forced Qing concessions to Britain?
+683	event	3	Berlin Conference	베를린 회의	What conference in 1884 to 1885 formalized European partition rules for Africa?
+684	event	3	Boxer Rebellion	의화단 운동	What rebellion in China from 1899 to 1901 opposed foreign influence and missionaries?
+685	event	3	Second Boer War	제2차 보어 전쟁	What conflict in South Africa pitted Britain against Boer republics from 1899 to 1902?
+686	event	3	Tanzimat Reforms	탄지마트 개혁	What Ottoman reform era in the 19th century sought legal and administrative modernization?
+687	event	3	Young Turk Revolution	청년튀르크 혁명	What movement in the Ottoman Empire restored a constitution in 1908?
+688	event	3	Sykes Picot Agreement	사이크스 피코 협정	What event in 1916 carved Arab provinces into British and French spheres in secret planning?
+689	event	3	Easter Rising	부활절 봉기	What uprising in Ireland in 1916 became a turning point toward independence?
+690	event	3	Long March	대장정	What campaign in China from 1934 to 1935 relocated Communist forces and became foundational mythology?
+691	event	4	Congress of Vienna Settlement	빈 체제	What post Napoleonic diplomatic settlement sought balance of power in Europe?
+692	event	4	Chartist Movement	차티스트 운동	What workers movement in Britain advocated universal male suffrage in the 19th century?
+693	event	4	Monroe Doctrine	먼로 독트린	What U.S. policy statement opposed new European colonization in the Americas?
+694	event	4	Paris Commune	파리 코뮌	What short lived worker government ruled Paris in 1871?
+695	event	4	Urabi Revolt	우라비 운동	What anti foreign movement in Egypt in 1881 to 1882 challenged Khedival and British influence?
+696	event	4	First Sino Japanese War	청일전쟁	What conflict from 1894 to 1895 established Japanese dominance over Qing China in Korea?
+697	event	4	Triple Alliance	삼국동맹	What alliance system linked Germany Austria Hungary and Italy before World War I?
+698	event	4	League of Nations	국제연맹	What postwar institution founded in 1920 sought collective security after World War I?
+699	event	4	Collectivization	집단농장화	What Soviet policy in the late 1920s forced peasants into collective farms?
+700	event	4	Egyptian Revolution of 1919	1919년 이집트 혁명	What anti colonial movement in Egypt in 1919 pressured Britain toward partial independence?
+701	event	5	Jallianwala Bagh Massacre	잘리안왈라 바그 학살	What massacre in 1919 radicalized Indian opposition to British rule in Punjab?
+702	event	5	May Fourth Movement	5·4 운동	What Chinese nationalist protest in 1919 opposed foreign concessions and warlord weakness?
+703	event	5	Beer Hall Putsch	맥주홀 폭동	What failed 1923 coup attempt by Hitler occurred in Munich?
+704	event	5	Night of the Long Knives	장검의 밤	What political purge in Nazi Germany in 1934 eliminated SA leadership rivals?
+705	event	5	Royal Indian Navy Mutiny	인도 왕립해군 반란	What military mutiny in colonial India in 1946 signaled weakening British authority before independence?
+706	event	5	Philippine American War	필리핀 미국 전쟁	What anti colonial war from 1899 to 1902 in the Philippines fought U.S. annexation?
+707	event	5	Maji Maji Rebellion	마지마지 반란	What anti colonial uprising in German East Africa from 1905 to 1907 used spiritual symbols of unity?
+708	event	5	March First Movement	3·1 운동	What movement in Korea began in 1919 demanding independence from Japanese colonial rule?
+709	event	5	Libyan Resistance War	리비아 독립 저항전	What resistance war in Libya against Italian occupation was associated with Sanusi leadership?
+710	event	5	Munich Agreement	뮌헨 협정	What diplomatic crisis in 1938 ceded Sudetenland to Germany under appeasement?
+711	event	6	Mahdist Revolt	마흐디 반란	What rebellion in Sudan from 1881 established a Mahdist state against Egyptian and British control?
+712	event	6	Mission Civilisatrice Doctrine	문명화 사명론	What legal doctrine justified French mission civilisatrice in colonial policy debates?
+713	event	6	Triple Entente Formation	삼국협상 성립	What agreement in 1907 aligned Britain Russia and France against the Triple Alliance bloc?
+714	event	6	Mexican Revolution	멕시코 혁명	What revolt in Mexico from 1910 overthrew long dictatorship and triggered social revolution?
+715	event	6	Turkish War of Independence	터키 독립전쟁	What post Ottoman conflict in Anatolia from 1919 to 1922 established modern Turkey?
+716	event	6	Weimar Hyperinflation Crisis	바이마르 초인플레이션 위기	What monetary collapse in Weimar Germany in 1923 became a symbol of hyperinflation crisis?
+717	event	6	Mukden Incident	만주사변	What military incident in 1931 provided Japan a pretext to seize Manchuria?
+718	event	6	Spanish Civil War	스페인 내전	What anti fascist coalition war in Spain from 1936 to 1939 became a prelude to World War II?
+719	event	6	Armenian Genocide	아르메니아인 학살	What coordinated genocide in 1915 targeted Armenians within the Ottoman Empire?
+720	event	6	Iraqi Revolt of 1920	1920년 이라크 봉기	What anti colonial uprising in Iraq in 1920 challenged British mandate rule?

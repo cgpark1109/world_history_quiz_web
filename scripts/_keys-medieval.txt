@@ -1,0 +1,180 @@
+181	person	1	Charlemagne	샤를마뉴	Who was crowned Emperor of the Romans in 800?
+182	person	1	Genghis Khan	칭기즈 칸	Who founded the Mongol Empire in 1206?
+183	person	1	Saladin	살라딘	Who led Muslim forces and recaptured Jerusalem in 1187?
+184	person	1	Joan of Arc	잔 다르크	Who became a French heroine during the Hundred Years' War?
+185	person	1	William the Conqueror	정복왕 윌리엄	Who won the Battle of Hastings in 1066?
+186	person	1	Richard I	리처드 1세	Who was the English king known as the Lionheart?
+187	person	1	Justinian I	유스티니아누스 1세	Who was the Byzantine emperor behind the Justinian Code?
+188	person	1	Harun al-Rashid	하룬 알 라시드	Who was the Abbasid caliph associated with Baghdad's golden age?
+189	person	1	Marco Polo	마르코 폴로	Who was the Venetian traveler who described Yuan China?
+190	person	1	Kublai Khan	쿠빌라이 칸	Who completed the conquest of Song China for the Mongols?
+191	person	2	Mehmed II	메흐메드 2세	Who conquered Constantinople in 1453?
+192	person	2	Timur	티무르	Who built a vast empire from Central Asia in the late 1300s?
+193	person	2	Eleanor of Aquitaine	아키텐의 엘레오노르	Who was a powerful medieval queen of England and Aquitaine?
+194	person	2	Thomas Aquinas	토마스 아퀴나스	Who wrote the Summa Theologica in medieval Europe?
+195	person	2	Mansa Musa	만사 무사	Who was the Mali ruler famous for his pilgrimage to Mecca?
+196	person	2	Ivan III	이반 3세	Who was the Muscovite ruler known as Ivan the Great?
+197	person	2	Dante Alighieri	단테 알리기에리	Who wrote the Divine Comedy in late medieval Italy?
+198	person	2	Ibn Sina	이븐 시나	Who was the Persian polymath known in Europe as Avicenna?
+199	person	2	Al-Ghazali	알 가잘리	Who was a major Islamic theologian and author of Revival of Religious Sciences?
+200	person	2	Minamoto no Yoritomo	미나모토노 요리토모	Who founded the Kamakura shogunate in Japan?
+201	person	3	Basil II	바실리오스 2세	Who was the Byzantine emperor called the Bulgar Slayer?
+202	person	3	Otto I	오토 1세	Who became the first Holy Roman Emperor in 962?
+203	person	3	Hugh Capet	위그 카페	Who founded the Capetian dynasty in France?
+204	person	3	El Cid	엘 시드	Who was the Castilian knight known as El Cid?
+205	person	3	Frederick I Barbarossa	프리드리히 1세 바르바로사	Who was the Holy Roman Emperor known as Barbarossa?
+206	person	3	Nur ad-Din	누르 앗 딘	Who ruled Syria before Saladin and fought the Crusaders?
+207	person	3	Ashikaga Takauji	아시카가 다카우지	Who founded the Ashikaga shogunate in Japan?
+208	person	3	Hongwu Emperor	홍무제	Who founded the Ming dynasty in 1368?
+209	person	3	Yongle Emperor	영락제	Who was the Ming emperor who moved the capital to Beijing?
+210	person	3	Bayezid I	바예지드 1세	Who was the Ottoman sultan defeated by Timur at Ankara?
+211	person	4	Alexios I Komnenos	알렉시오스 1세 콤네노스	Who was the Byzantine emperor who appealed to the West before the First Crusade?
+212	person	4	Bohemond I of Antioch	보에몽 1세	Who became a leading Norman prince in the First Crusade?
+213	person	4	Philip IV of France	필리프 4세	Who was the French king called Philip the Fair?
+214	person	4	Edward III	에드워드 3세	Who was the English king at the start of the Hundred Years' War?
+215	person	4	Jan Hus	얀 후스	Who was the Czech reformer executed at the Council of Constance?
+216	person	4	Ibn Battuta	이븐 바투타	Who traveled widely across Afro Eurasia and wrote the Rihla?
+217	person	4	Emperor Taizu of Song	송 태조	Who founded the Song dynasty in China?
+218	person	4	Sima Guang	사마광	Who was the Song historian statesman who compiled Zizhi Tongjian?
+219	person	4	Emperor Go-Daigo	고다이고 천황	Who was the Japanese emperor linked to the Kenmu Restoration?
+220	person	4	Osman I	오스만 1세	Who founded the Ottoman beylik around 1300?
+221	person	5	Anna Komnene	안나 콤니니	Who was the Byzantine princess and historian who wrote the Alexiad?
+222	person	5	Bede	베다	Who was the Northumbrian monk known as the Venerable Bede?
+223	person	5	Alcuin of York	요크의 알퀸	Who was the scholar at Charlemagne's court from York?
+224	person	5	Nizam al-Mulk	니잠 알 물크	Who served as vizier to the Seljuks and wrote Siyasatnama?
+225	person	5	Baldwin IV	보두앵 4세	Who was the leper king of Jerusalem during Crusader rule?
+226	person	5	Bertrand du Guesclin	베르트랑 뒤 게클랭	Who was the French commander known as the Eagle of Brittany?
+227	person	5	Wenceslaus IV	바츨라프 4세	Who was the Bohemian king during the early Hussite tensions?
+228	person	5	Giovanni Villani	조반니 빌라니	Who wrote a major chronicle of Florence before the Black Death?
+229	person	5	Xu Da	서달	Who was the Ming general who helped overthrow the Yuan?
+230	person	5	Murad I	무라드 1세	Who was the early Ottoman ruler victorious at Kosovo in 1389?
+231	person	6	Nikephoros II Phokas	니케포로스 2세 포카스	Who was the Byzantine emperor who reconquered Crete in 961?
+232	person	6	Michael Psellos	미하일 프셀로스	Who was a Byzantine intellectual and adviser named Psellos?
+233	person	6	Al-Mu'tasim	알 무타심	Who was the Abbasid caliph who founded Samarra as a capital?
+234	person	6	Alp Arslan	알프 아르슬란	Who was the Seljuk sultan victorious at Manzikert in 1071?
+235	person	6	Snorri Sturluson	스노리 스투를루손	Who was the Icelandic author of Heimskringla and Edda traditions?
+236	person	6	Rashid al-Din	라시드 앗 딘	Who was the Ilkhanate historian who compiled Jami al-Tawarikh?
+237	person	6	Zheng He	정화	Who led Ming treasure voyages across the Indian Ocean?
+238	person	6	Yi Seong-gye	이성계	Who founded the Joseon dynasty in 1392?
+239	person	6	Ashikaga Yoshimitsu	아시카가 요시미쓰	Who was the Muromachi shogun who patronized the Golden Pavilion?
+240	person	6	Ibn Khaldun	이븐 할둔	Who wrote the Muqaddimah in the late medieval Islamic world?
+241	year	1	476 AD	서기 476년	In what year did the Western Roman Empire traditionally fall?
+242	year	1	1066 AD	서기 1066년	In what year did the Battle of Hastings occur?
+243	year	1	1095 AD	서기 1095년	In what year did the First Crusade begin?
+244	year	1	1215 AD	서기 1215년	In what year did the Magna Carta get sealed?
+245	year	1	1206 AD	서기 1206년	In what year did the Mongol Empire begin under Genghis Khan?
+246	year	1	1347 AD	서기 1347년	In what year did the Black Death begin spreading in Europe?
+247	year	1	1453 AD	서기 1453년	In what year did Constantinople fall to the Ottomans?
+248	year	1	800 AD	서기 800년	In what year was Charlemagne crowned emperor?
+249	year	1	622 AD	서기 622년	In what year did the Hijra from Mecca to Medina occur?
+250	year	1	1241 AD	서기 1241년	In what year did the Mongols first invade Poland at Legnica?
+251	year	2	732 AD	서기 732년	In what year did the Battle of Tours occur?
+252	year	2	843 AD	서기 843년	In what year was the Treaty of Verdun signed?
+253	year	2	1054 AD	서기 1054년	In what year did the Great Schism between East and West churches occur?
+254	year	2	1071 AD	서기 1071년	In what year did the Battle of Manzikert occur?
+255	year	2	1187 AD	서기 1187년	In what year did Saladin recapture Jerusalem?
+256	year	2	1291 AD	서기 1291년	In what year did the Crusader state of Acre fall?
+257	year	2	1337 AD	서기 1337년	In what year did the Hundred Years' War begin?
+258	year	2	1415 AD	서기 1415년	In what year did the Battle of Agincourt occur?
+259	year	2	1260 AD	서기 1260년	In what year did the Mamluks defeat the Mongols at Ayn Jalut?
+260	year	2	960 AD	서기 960년	In what year did the Song dynasty begin in China?
+261	year	3	962 AD	서기 962년	In what year did Otto I become Holy Roman Emperor?
+262	year	3	988 AD	서기 988년	In what year did Kievan Rus adopt Christianity under Vladimir?
+263	year	3	1122 AD	서기 1122년	In what year did the Concordat of Worms get signed?
+264	year	3	1171 AD	서기 1171년	In what year did Saladin abolish the Fatimid Caliphate in Egypt?
+265	year	3	1258 AD	서기 1258년	In what year did Mongols sack Baghdad?
+266	year	3	1302 AD	서기 1302년	In what year did the Battle of Courtrai occur?
+267	year	3	1389 AD	서기 1389년	In what year did the Battle of Kosovo occur?
+268	year	3	1431 AD	서기 1431년	In what year was Joan of Arc executed?
+269	year	3	1455 AD	서기 1455년	In what year did Gutenberg complete the 42 line Bible?
+270	year	3	907 AD	서기 907년	In what year did the Tang dynasty end?
+271	year	4	1204 AD	서기 1204년	In what year did the Fourth Crusade capture Constantinople?
+272	year	4	1127 AD	서기 1127년	In what year did the Jingkang Incident occur in Song China?
+273	year	4	1279 AD	서기 1279년	In what year did the Southern Song fall to the Mongols?
+274	year	4	1368 AD	서기 1368년	In what year did the Ming dynasty replace the Yuan dynasty?
+275	year	4	1192 AD	서기 1192년	In what year did the Kamakura shogunate begin?
+276	year	4	1185 AD	서기 1185년	In what year did the Genpei War end?
+277	year	4	1336 AD	서기 1336년	In what year did the Ashikaga shogunate begin?
+278	year	4	794 AD	서기 794년	In what year did the Heian period begin in Japan?
+279	year	4	1088 AD	서기 1088년	In what year did the University of Bologna traditionally begin?
+280	year	4	1214 AD	서기 1214년	In what year did the Battle of Bouvines occur?
+281	year	5	1077 AD	서기 1077년	In what year did the Investiture Controversy effectively begin with Canossa conflict era?
+282	year	5	1209 AD	서기 1209년	In what year did the Albigensian Crusade begin?
+283	year	5	1231 AD	서기 1231년	In what year did Frederick II issue the Constitutions of Melfi?
+284	year	5	1260 AD	서기 1260년	In what year did the Mamluks defeat the Mongols at Ayn Jalut?
+285	year	5	1282 AD	서기 1282년	In what year did the Sicilian Vespers uprising begin?
+286	year	5	1396 AD	서기 1396년	In what year did the Ottoman victory at Nicopolis occur?
+287	year	5	1414 AD	서기 1414년	In what year did the Council of Constance begin?
+288	year	5	1461 AD	서기 1461년	In what year did the fall of the Byzantine city of Trebizond occur?
+289	year	5	1480 AD	서기 1480년	In what year did Ivan III end Mongol tribute at the Ugra standoff?
+290	year	5	1497 AD	서기 1497년	In what year did Savonarola's Bonfire of the Vanities occur?
+291	year	6	955 AD	서기 955년	In what year did the Battle of Lechfeld secure Otto's prestige?
+292	year	6	961 AD	서기 961년	In what year did the Byzantine recovery of Crete occur?
+293	year	6	1158 AD	서기 1158년	In what year did the First Diet of Roncaglia take place?
+294	year	6	1187 AD	서기 1187년	In what year did the Battle of Hattin occur?
+295	year	6	1261 AD	서기 1261년	In what year did the Latin Empire end and Byzantium get restored?
+296	year	6	1380 AD	서기 1380년	In what year did the Battle of Kulikovo occur?
+297	year	6	1402 AD	서기 1402년	In what year did the Yongle Emperor begin his reign?
+298	year	6	1415 AD	서기 1415년	In what year did the Portuguese capture Ceuta?
+299	year	6	1455 AD	서기 1455년	In what year did the War of the Roses begin in England?
+300	year	6	1377 AD	서기 1377년	In what year did the first printed Korean metal type Jikji appear?
+301	event	1	Norman Conquest of England	노르만의 잉글랜드 정복	What event in 1066 brought Norman rule to England?
+302	event	1	Black Death	흑사병	What pandemic devastated Europe beginning in 1347?
+303	event	1	Fall of Constantinople	콘스탄티노폴리스 함락	What event in 1453 ended the Byzantine Empire?
+304	event	1	Crusades	십자군 전쟁	What series of campaigns began in 1095 to capture holy sites?
+305	event	1	Foundation of the Mongol Empire	몽골 제국 성립	What event established the Mongol Empire under Genghis Khan?
+306	event	1	Hundred Years' War	백년전쟁	What conflict between England and France lasted from 1337 to 1453?
+307	event	1	Sealing of the Magna Carta	마그나 카르타 봉인	What charter limited the English king's power in 1215?
+308	event	1	Battle of Hastings	헤이스팅스 전투	What battle in 1066 confirmed William's rule in England?
+309	event	1	Hijra	히즈라	What event launched Islamic history in 622 with Muhammad's migration?
+310	event	1	First Crusade	제1차 십자군	What event began with Urban II's call at Clermont?
+311	event	2	Battle of Tours	투르 전투	What battle in 732 halted Umayyad expansion into Frankish lands?
+312	event	2	Treaty of Verdun	베르됭 조약	What treaty in 843 divided Charlemagne's empire?
+313	event	2	Great Schism	동서 교회 대분열	What event in 1054 split the Eastern and Western churches?
+314	event	2	Battle of Manzikert	만지케르트 전투	What battle in 1071 weakened Byzantium in Anatolia?
+315	event	2	Battle of Hattin	하틴 전투	What battle in 1187 allowed Saladin to retake Jerusalem?
+316	event	2	Fall of Acre	아크레 함락	What siege in 1291 ended the last major Crusader stronghold in the Levant?
+317	event	2	Establishment of the Kamakura Shogunate	가마쿠라 막부 성립	What event in Japan established military rule under shoguns in 1192?
+318	event	2	Fall of the Southern Song	남송 멸망	What event in 1279 completed Mongol conquest of China?
+319	event	2	Second Mongol Invasion of Japan	몽골의 2차 일본 원정	What naval defense in 1281 helped Japan repel a Mongol invasion?
+320	event	2	Ottoman Capture of Constantinople	오스만의 콘스탄티노폴리스 정복	What event in 1453 gave the Ottomans control of Constantinople?
+321	event	3	Fourth Crusade Sack of Constantinople	제4차 십자군의 콘스탄티노폴리스 약탈	What event in 1204 created a Latin state in Constantinople?
+322	event	3	Jin Song Wars	금 송 전쟁	What conflict in Song China led to the Jingkang Incident in 1127?
+323	event	3	Sack of Baghdad	바그다드 함락	What event in 1258 ended the Abbasid caliphate in Baghdad?
+324	event	3	Sicilian Vespers	시칠리아 만종 사건	What uprising in 1282 expelled many French forces from Sicily?
+325	event	3	Battle of Ayn Jalut	아인 잘루트 전투	What battle in 1260 checked Mongol expansion in the Levant?
+326	event	3	Battle of Kosovo	코소보 전투	What conflict in 1389 became central to Serbian and Ottoman memory?
+327	event	3	Agincourt Campaign	아쟁쿠르 전역	What campaign in 1415 gave England a major victory in France?
+328	event	3	Recapture of Constantinople by Nicaea	니케아의 콘스탄티노폴리스 탈환	What event restored Byzantine rule in Constantinople in 1261?
+329	event	3	Founding of the Ming Dynasty	명나라 건국	What event in 1368 replaced Mongol Yuan rule in China?
+330	event	3	Zheng He's Treasure Voyages	정화의 보선 원정	What maritime program under Ming sent fleets across the Indian Ocean?
+331	event	4	Feudalism	봉건제	What medieval institution linked landholding and military service in Europe?
+332	event	4	Knights Templar	템플 기사단	What religious military order protected pilgrims and later fought in Crusades?
+333	event	4	Walk to Canossa	카노사의 굴욕	What event in 1077 symbolized papal authority over emperors?
+334	event	4	Mongol Invasion of Rus	몽골의 루스 침입	What conflict in 1220 to 1260 transformed Kievan Rus principalities?
+335	event	4	Wars of the Roses	장미전쟁	What dynastic conflict in England from 1455 shaped late medieval politics?
+336	event	4	Avignon Papacy	아비뇽 유수	What event in 1309 moved the papacy from Rome to Avignon?
+337	event	4	Rise of the Ottoman Beylik	오스만 베일릭의 부상	What military rise around 1300 laid the foundations of the Ottoman state?
+338	event	4	Battle of Kulikovo	쿨리코보 전투	What event in 1380 signaled rising Moscow resistance to Mongol rule?
+339	event	4	Western Schism	서방 교회 대분열	What crisis in the 1300s split the papacy between rival claimants?
+340	event	4	Umayyad Conquest of Hispania	우마이야의 히스파니아 정복	What conquest in 711 began long Islamic rule in parts of Iberia?
+341	event	5	Constitutions of Melfi	멜피 헌장	What legal code of 1231 strengthened centralized rule in Sicily?
+342	event	5	Northern Crusades	북방 십자군	What conflict saw the Teutonic Order fight pagan Baltic peoples?
+343	event	5	Battle of Legnica	레그니차 전투	What event in 1241 brought Mongol armies into Central Europe at Legnica?
+344	event	5	Jacquerie	자크리 난	What uprising in 1358 reflected peasant unrest in France?
+345	event	5	Peasants' Revolt	잉글랜드 농민 반란	What rebellion in 1381 challenged social order in England?
+346	event	5	Defenestration of Prague	프라하 창문 투척 사건	What event in 1419 began the Hussite Wars in Bohemia?
+347	event	5	Burgundian Wars	부르고뉴 전쟁	What conflict in 1467 to 1477 weakened Burgundy as a great power?
+348	event	5	Siege of Belgrade	베오그라드 공방전	What conquest in 1456 forced Ottoman retreat at Belgrade?
+349	event	5	Treaty of Tordesillas	토르데시야스 조약	What event in 1494 divided overseas expansion rights between Iberian crowns?
+350	event	5	Italian City State Wars	이탈리아 도시국가 전쟁	What city state rivalry in Italy fueled conflicts from 1300s to 1400s?
+351	event	6	Battle of Lechfeld	레히펠트 전투	What event in 955 ended major Magyar raiding into western Europe?
+352	event	6	Byzantine Reconquest of Crete	비잔틴의 크레타 재정복	What campaign in 961 restored Byzantine control of Crete?
+353	event	6	Diet of Roncaglia	론칼리아 제국회의	What imperial assembly in 1158 asserted Frederick Barbarossa's legal claims in Italy?
+354	event	6	Nanboku cho Conflict	남북조 내전	What civil war in 1330s Japan split imperial courts into north and south?
+355	event	6	Ciompi Revolt	치옴피 반란	What event in 1378 began with urban revolt in Florence by wool workers?
+356	event	6	Battle of Nicopolis	니코폴리스 전투	What battle in 1396 checked a major crusading army at the Danube?
+357	event	6	Battle of Ankara	앙카라 전투	What event in 1402 shattered Ottoman momentum through Timur's victory?
+358	event	6	Compactata of Basel	바젤 협약	What diplomatic gathering in 1435 attempted to settle the Hussite conflict?
+359	event	6	Establishment of the Spanish Inquisition	스페인 종교재판소 설립	What event in 1478 created a Spanish tribunal for religious policing?
+360	event	6	Vasco da Gama's Arrival in India	바스쿠 다 가마의 인도 도착	What event in 1498 opened a direct sea route from Europe to India?

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>World History Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-bg: #3d2b1f;
+        --color-text: #f5ecd7;
+        --color-correct: #4caf50;
+        --color-incorrect: #f44336;
+        --color-gold: #c8a96e;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <section id="home-screen" class="screen">
+        <header class="top-bar">
+          <div class="top-bar-left"></div>
+          <button id="home-settings-btn" class="icon-btn" aria-label="Open settings">≡</button>
+        </header>
+
+        <h1 class="screen-title">World History Quiz</h1>
+
+        <div class="era-list">
+          <button class="era-btn" data-era="ancient">
+            <span>Ancient</span>
+            <span>(고대)</span>
+          </button>
+          <button class="era-btn" data-era="medieval">
+            <span>Medieval</span>
+            <span>(중세)</span>
+          </button>
+          <button class="era-btn" data-era="early_modern">
+            <span>Early Modern</span>
+            <span>(근대)</span>
+          </button>
+          <button class="era-btn" data-era="modern1">
+            <span>Modern</span>
+            <span>(현대 1)</span>
+          </button>
+          <button class="era-btn" data-era="contemporary">
+            <span>Contemporary</span>
+            <span>(현대 2)</span>
+          </button>
+        </div>
+
+        <footer class="screen-footer">
+          <div id="language-toggle-home" class="lang-toggle" role="group" aria-label="Language toggle">
+            <button class="lang-btn active" data-lang="en">English</button>
+            <button class="lang-btn" data-lang="ko">한국어</button>
+          </div>
+        </footer>
+      </section>
+
+      <section id="category-screen" class="screen hidden">
+        <header class="top-bar">
+          <button id="category-back-btn" class="back-btn" aria-label="Go back">←</button>
+          <div class="top-bar-right"></div>
+        </header>
+
+        <h2 id="category-era-title" class="screen-title">Selected Era</h2>
+
+        <div class="category-list">
+          <button class="category-btn" data-category="person">
+            <span>Person Quiz</span>
+            <span>(인물 퀴즈)</span>
+          </button>
+          <button class="category-btn" data-category="year">
+            <span>Year Quiz</span>
+            <span>(연도 퀴즈)</span>
+          </button>
+          <button class="category-btn" data-category="event">
+            <span>Event Quiz</span>
+            <span>(사건 퀴즈)</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="stage-screen" class="screen hidden">
+        <header class="top-bar">
+          <button id="stage-back-btn" class="back-btn" aria-label="Go back">←</button>
+          <div class="top-bar-right"></div>
+        </header>
+
+        <h2 id="stage-title" class="screen-title">Era + Category</h2>
+
+        <div id="stage-grid" class="stage-grid">
+          <button class="stage-btn unlocked current" data-stage="1">Stage 1</button>
+          <button class="stage-btn unlocked" data-stage="2">Stage 2</button>
+          <button class="stage-btn locked" data-stage="3" disabled>Stage 3 (locked)</button>
+          <button class="stage-btn locked" data-stage="4" disabled>Stage 4 (locked)</button>
+          <button class="stage-btn locked" data-stage="5" disabled>Stage 5 (locked)</button>
+          <button class="stage-btn locked" data-stage="6" disabled>Stage 6 (locked)</button>
+        </div>
+      </section>
+
+      <section id="quiz-screen" class="screen hidden">
+        <header class="top-bar">
+          <button id="quiz-back-btn" class="back-btn" aria-label="Go back">←</button>
+          <button id="hint-btn" class="hint-btn" type="button" aria-label="Hint (Watch Ad)">Hint</button>
+        </header>
+
+        <div id="quiz-meta" class="quiz-meta">Ancient - Person Quiz</div>
+
+        <div class="progress-wrap" aria-label="Quiz progress">
+          <div id="progress-bar" class="progress-bar" style="width: 10%"></div>
+        </div>
+        <div id="question-counter" class="question-counter">1 / 10</div>
+
+        <p id="question-text" class="question-text">Question text appears here.</p>
+
+        <div id="answers" class="answers">
+          <button class="answer-btn" data-index="0">Answer 1</button>
+          <button class="answer-btn" data-index="1">Answer 2</button>
+          <button class="answer-btn" data-index="2">Answer 3</button>
+          <button class="answer-btn" data-index="3">Answer 4</button>
+        </div>
+
+        <div id="score-display" class="score-display">Score: 0</div>
+
+        <button id="continue-btn" class="continue-btn hidden" type="button">Continue</button>
+
+        <div id="ad-banner-slot" class="ad-banner-slot" aria-label="AdMob banner area"></div>
+      </section>
+
+      <section id="result-screen" class="screen hidden">
+        <div id="result-score" class="result-score">7 / 10</div>
+        <div id="result-status" class="result-status clear">Stage Clear!</div>
+        <p id="result-message" class="result-message">Great job! You are mastering world history.</p>
+
+        <div class="result-actions">
+          <button id="next-stage-btn" class="primary-btn">Next Stage</button>
+          <button id="retry-btn" class="secondary-btn">Retry</button>
+          <button id="stage-select-btn" class="secondary-btn">Stage Select</button>
+          <button id="home-btn" class="secondary-btn">Home</button>
+        </div>
+      </section>
+
+      <section id="settings-screen" class="screen hidden">
+        <header class="top-bar">
+          <button id="settings-back-btn" class="back-btn" aria-label="Go back">←</button>
+          <div class="top-bar-right"></div>
+        </header>
+
+        <h2 class="screen-title">Settings / 설정</h2>
+
+        <div class="settings-section">
+          <div class="settings-section-title" id="text-progress-title">My Progress</div>
+          <div id="progress-summary">
+            <!-- dynamically generated -->
+          </div>
+        </div>
+
+        <button id="reset-progress-btn" class="danger-btn">Reset Progress</button>
+
+        <a id="privacy-policy-link" class="privacy-link" href="#" target="_blank" rel="noopener noreferrer">
+          Privacy Policy
+        </a>
+
+        <div class="settings-item" id="rate-app-btn" role="button" tabindex="0">
+          <span id="text-rate-app">Rate this App ⭐</span>
+        </div>
+
+        <div class="version-label">v1.0.0</div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
