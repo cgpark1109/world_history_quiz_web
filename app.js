@@ -3,7 +3,14 @@
 const ERAS = ['ancient', 'medieval', 'early_modern', 'modern1', 'contemporary'];
 const CATEGORIES = ['person', 'year', 'event'];
 const TOTAL_STAGES = 6;
+const ERA_TOTAL_STAGES = {
+  ancient: 8,
+};
 const QUESTIONS_PER_SESSION = 10;
+
+function getTotalStages(era) {
+  return ERA_TOTAL_STAGES[era] ?? TOTAL_STAGES;
+}
 
 const ERA_LABELS = {
   ancient: { en: 'Ancient', ko: '고대' },
@@ -56,7 +63,12 @@ const TEXTS = {
   loadingStage: { en: 'Loading...', ko: '불러오는 중...' },
   loadDataError: { en: 'Failed to load quiz data.', ko: '퀴즈 데이터를 불러오지 못했습니다.' },
   adLoading: { en: 'Loading...', ko: '로딩 중...' },
+  noticesTitle: { en: 'Notices', ko: '공지사항' },
+  noticeEmpty: { en: 'No notices yet.', ko: '등록된 공지가 없습니다.' },
+  noticeNew: { en: 'New', ko: '새 공지' },
 };
+
+const READ_NOTICES_KEY = 'readNoticeIds';
 
 const state = {
   currentEra: 'ancient',
@@ -70,6 +82,8 @@ const state = {
   awaitingContinue: false,
   currentScreen: 'home-screen',
   previousScreen: 'home-screen',
+  notices: [],
+  currentNoticeId: null,
 };
 
 const dom = {};
@@ -90,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateTexts();
   showScreen('home-screen', false);
   goHome();
+  loadNotices().catch((error) => console.warn('Failed to load notices:', error));
 });
 
 function cacheDom() {
@@ -100,6 +115,8 @@ function cacheDom() {
   dom.quizScreen = document.getElementById('quiz-screen');
   dom.resultScreen = document.getElementById('result-screen');
   dom.settingsScreen = document.getElementById('settings-screen');
+  dom.noticeListScreen = document.getElementById('notice-list-screen');
+  dom.noticeDetailScreen = document.getElementById('notice-detail-screen');
 
   dom.homeTitle = dom.homeScreen.querySelector('.screen-title');
   dom.settingsTitle = dom.settingsScreen.querySelector('.screen-title');
@@ -129,9 +146,30 @@ function cacheDom() {
   dom.progressTitle = document.getElementById('text-progress-title');
   dom.rateAppBtn = document.getElementById('rate-app-btn');
   dom.rateAppText = document.getElementById('text-rate-app');
+  dom.homeNoticeBtn = document.getElementById('home-notice-btn');
+  dom.noticeBadge = document.getElementById('notice-badge');
+  dom.noticeList = document.getElementById('notice-list');
+  dom.noticeEmpty = document.getElementById('notice-empty');
+  dom.noticeListTitle = document.getElementById('notice-list-title');
+  dom.noticeDetailTitle = document.getElementById('notice-detail-title');
+  dom.noticeDetailDate = document.getElementById('notice-detail-date');
+  dom.noticeDetailBody = document.getElementById('notice-detail-body');
 }
 
 function bindEvents() {
+  document.getElementById('home-notice-btn').addEventListener('click', () => {
+    state.previousScreen = state.currentScreen;
+    openNoticeList();
+  });
+
+  document.getElementById('notice-list-back-btn').addEventListener('click', () => {
+    showScreen(state.previousScreen || 'home-screen');
+  });
+
+  document.getElementById('notice-detail-back-btn').addEventListener('click', () => {
+    openNoticeList();
+  });
+
   document.getElementById('home-settings-btn').addEventListener('click', () => {
     state.previousScreen = state.currentScreen;
     showScreen('settings-screen');
@@ -282,6 +320,10 @@ function showScreen(screenId, pushState = true) {
     renderProgressSummary();
   }
 
+  if (screenId === 'notice-list-screen') {
+    renderNoticeList();
+  }
+
   if (pushState) {
     history.pushState({ screenId }, '', `#${screenId}`);
   }
@@ -327,14 +369,14 @@ function getUnlockedStage() {
   const key = getUnlockKey(state.currentEra, state.currentCategory);
   const value = Number(localStorage.getItem(key));
   if (Number.isNaN(value) || value < 1) return 1;
-  return Math.min(TOTAL_STAGES, value);
+  return Math.min(getTotalStages(state.currentEra), value);
 }
 
 function renderStageScreen() {
   const unlockedStage = getUnlockedStage();
   dom.stageGrid.innerHTML = '';
 
-  for (let stage = 1; stage <= TOTAL_STAGES; stage += 1) {
+  for (let stage = 1; stage <= getTotalStages(state.currentEra); stage += 1) {
     const btn = document.createElement('button');
     btn.className = 'stage-btn';
     btn.dataset.stage = String(stage);
@@ -575,11 +617,13 @@ function showResult(incrementResultCount = true) {
   if (cleared) {
     const key = getUnlockKey(state.currentEra, state.currentCategory);
     const currentUnlocked = getUnlockedStage();
-    const nextUnlock = Math.min(TOTAL_STAGES, Math.max(currentUnlocked, state.currentStage + 1));
+    const totalStages = getTotalStages(state.currentEra);
+    const nextUnlock = Math.min(totalStages, Math.max(currentUnlocked, state.currentStage + 1));
     localStorage.setItem(key, String(nextUnlock));
   }
 
-  const showNextStage = cleared && state.currentStage < TOTAL_STAGES;
+  const totalStages = getTotalStages(state.currentEra);
+  const showNextStage = cleared && state.currentStage < totalStages;
   dom.nextStageBtn.classList.toggle('hidden', !showNextStage);
 
   if (incrementResultCount) {
@@ -602,7 +646,7 @@ function getResultMessage(score, lang) {
 }
 
 function onNextStageClick() {
-  if (state.currentStage >= TOTAL_STAGES) return;
+  if (state.currentStage >= getTotalStages(state.currentEra)) return;
   selectStage(state.currentStage + 1);
 }
 
@@ -680,6 +724,10 @@ function setLanguage(lang) {
     renderQuestion();
   } else if (state.currentScreen === 'result-screen') {
     showResult(false);
+  } else if (state.currentScreen === 'notice-list-screen') {
+    renderNoticeList();
+  } else if (state.currentScreen === 'notice-detail-screen' && state.currentNoticeId) {
+    renderNoticeDetail(state.currentNoticeId);
   }
 }
 
@@ -692,6 +740,18 @@ function updateTexts() {
   }
   if (dom.rateAppText) {
     dom.rateAppText.textContent = TEXTS.rateApp[state.language];
+  }
+  if (dom.noticeListTitle) {
+    dom.noticeListTitle.textContent = TEXTS.noticesTitle[state.language];
+  }
+  if (dom.noticeEmpty) {
+    dom.noticeEmpty.textContent = TEXTS.noticeEmpty[state.language];
+  }
+  if (dom.homeNoticeBtn) {
+    dom.homeNoticeBtn.setAttribute(
+      'aria-label',
+      state.language === 'ko' ? '공지사항 열기' : 'Open notices',
+    );
   }
   dom.privacyLink.textContent = TEXTS.privacyPolicy[state.language];
   dom.versionLabel.textContent = 'v1.0.0';
@@ -720,6 +780,13 @@ function updateTexts() {
 
   if (state.currentScreen === 'settings-screen') {
     renderProgressSummary();
+  }
+
+  updateNoticeBadge();
+  if (state.currentScreen === 'notice-list-screen') {
+    renderNoticeList();
+  } else if (state.currentScreen === 'notice-detail-screen' && state.currentNoticeId) {
+    renderNoticeDetail(state.currentNoticeId);
   }
 
   if (state.currentScreen === 'quiz-screen' && state.questions.length > 0) {
@@ -878,12 +945,12 @@ function getUnlockedStageFor(era, category) {
   const key = getUnlockKey(era, category);
   const value = Number(localStorage.getItem(key));
   if (Number.isNaN(value) || value < 1) return 1;
-  return Math.min(TOTAL_STAGES, value);
+  return Math.min(getTotalStages(era), value);
 }
 
 function getClearedStageCount(era, category) {
   const unlocked = getUnlockedStageFor(era, category);
-  return Math.max(0, Math.min(TOTAL_STAGES, unlocked - 1));
+  return Math.max(0, Math.min(getTotalStages(era), unlocked - 1));
 }
 
 function renderProgressSummary() {
@@ -902,7 +969,8 @@ function renderProgressSummary() {
 
     CATEGORIES.forEach((category) => {
       const cleared = getClearedStageCount(era, category);
-      const fillPercent = (cleared / TOTAL_STAGES) * 100;
+      const totalStages = getTotalStages(era);
+      const fillPercent = (cleared / totalStages) * 100;
 
       const row = document.createElement('div');
       row.className = 'progress-bar-row';
@@ -922,7 +990,7 @@ function renderProgressSummary() {
 
       const count = document.createElement('span');
       count.className = 'progress-bar-count';
-      count.textContent = `${cleared}/${TOTAL_STAGES}`;
+      count.textContent = `${cleared}/${getTotalStages(era)}`;
 
       row.append(label, track, count);
       eraBlock.appendChild(row);
@@ -934,6 +1002,133 @@ function renderProgressSummary() {
 
 function onRateAppClick() {
   postFlutterMessage('openPlayStore');
+}
+
+async function loadNotices() {
+  const response = await fetch('data/notices.json');
+  if (!response.ok) {
+    throw new Error(`Failed to fetch notices.json (${response.status})`);
+  }
+  const data = await response.json();
+  state.notices = Array.isArray(data)
+    ? data.filter((item) => item && item.id).sort((a, b) => String(b.date).localeCompare(String(a.date)))
+    : [];
+  updateNoticeBadge();
+}
+
+function getReadNoticeIds() {
+  try {
+    const raw = localStorage.getItem(READ_NOTICES_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function markNoticeRead(noticeId) {
+  if (!noticeId) return;
+  const readIds = getReadNoticeIds();
+  if (readIds.includes(noticeId)) return;
+  readIds.push(noticeId);
+  localStorage.setItem(READ_NOTICES_KEY, JSON.stringify(readIds));
+  updateNoticeBadge();
+}
+
+function isNoticeUnread(noticeId) {
+  return !getReadNoticeIds().includes(noticeId);
+}
+
+function getUnreadNoticeCount() {
+  return state.notices.filter((notice) => isNoticeUnread(notice.id)).length;
+}
+
+function updateNoticeBadge() {
+  if (!dom.noticeBadge) return;
+  const unread = getUnreadNoticeCount();
+  dom.noticeBadge.classList.toggle('hidden', unread === 0);
+}
+
+function formatNoticeDate(dateStr) {
+  if (!dateStr) return '';
+  const parts = String(dateStr).split('-');
+  if (parts.length !== 3) return dateStr;
+  const [year, month, day] = parts;
+  if (state.language === 'ko') {
+    return `${year}년 ${Number(month)}월 ${Number(day)}일`;
+  }
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthLabel = monthNames[Number(month) - 1] || month;
+  return `${monthLabel} ${Number(day)}, ${year}`;
+}
+
+function getNoticeField(notice, field) {
+  const localized = notice[`${field}_${state.language}`];
+  return localized || notice[`${field}_en`] || '';
+}
+
+function openNoticeList() {
+  renderNoticeList();
+  showScreen('notice-list-screen');
+}
+
+function renderNoticeList() {
+  if (!dom.noticeList || !dom.noticeEmpty) return;
+
+  dom.noticeList.innerHTML = '';
+
+  if (!state.notices.length) {
+    dom.noticeEmpty.classList.remove('hidden');
+    return;
+  }
+
+  dom.noticeEmpty.classList.add('hidden');
+
+  state.notices.forEach((notice) => {
+    const unread = isNoticeUnread(notice.id);
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `notice-item${unread ? ' unread' : ''}`;
+    btn.setAttribute('role', 'listitem');
+
+    const title = document.createElement('div');
+    title.className = 'notice-item-title';
+    title.textContent = getNoticeField(notice, 'title');
+
+    const meta = document.createElement('div');
+    meta.className = 'notice-item-meta';
+
+    const date = document.createElement('span');
+    date.textContent = formatNoticeDate(notice.date);
+
+    meta.appendChild(date);
+    if (unread) {
+      const dot = document.createElement('span');
+      dot.className = 'notice-item-dot';
+      dot.setAttribute('aria-label', TEXTS.noticeNew[state.language]);
+      meta.appendChild(dot);
+    }
+
+    btn.append(title, meta);
+    btn.addEventListener('click', () => openNoticeDetail(notice.id));
+    dom.noticeList.appendChild(btn);
+  });
+}
+
+function openNoticeDetail(noticeId) {
+  state.currentNoticeId = noticeId;
+  renderNoticeDetail(noticeId);
+  markNoticeRead(noticeId);
+  showScreen('notice-detail-screen');
+}
+
+function renderNoticeDetail(noticeId) {
+  const notice = state.notices.find((item) => item.id === noticeId);
+  if (!notice || !dom.noticeDetailTitle) return;
+
+  dom.noticeDetailTitle.textContent = getNoticeField(notice, 'title');
+  dom.noticeDetailDate.textContent = formatNoticeDate(notice.date);
+  dom.noticeDetailBody.textContent = getNoticeField(notice, 'body');
 }
 
 function getQuestionText(question) {

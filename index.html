@@ -25,7 +25,10 @@
     <div id="app" class="app">
       <section id="home-screen" class="screen">
         <header class="top-bar">
-          <div class="top-bar-left"></div>
+          <button id="home-notice-btn" class="icon-btn icon-btn-left notice-btn" aria-label="Open notices">
+            <span class="notice-icon" aria-hidden="true">🔔</span>
+            <span id="notice-badge" class="notice-badge hidden" aria-hidden="true"></span>
+          </button>
           <button id="home-settings-btn" class="icon-btn" aria-label="Open settings">≡</button>
         </header>
 
@@ -172,6 +175,28 @@
         </div>
 
         <div class="version-label">v1.0.0</div>
+      </section>
+
+      <section id="notice-list-screen" class="screen hidden">
+        <header class="top-bar">
+          <button id="notice-list-back-btn" class="back-btn" aria-label="Go back">←</button>
+          <div class="top-bar-right"></div>
+        </header>
+
+        <h2 id="notice-list-title" class="screen-title">Notices</h2>
+        <div id="notice-list" class="notice-list" role="list"></div>
+        <p id="notice-empty" class="notice-empty hidden">No notices yet.</p>
+      </section>
+
+      <section id="notice-detail-screen" class="screen hidden">
+        <header class="top-bar">
+          <button id="notice-detail-back-btn" class="back-btn" aria-label="Go back">←</button>
+          <div class="top-bar-right"></div>
+        </header>
+
+        <h2 id="notice-detail-title" class="screen-title notice-detail-heading"></h2>
+        <time id="notice-detail-date" class="notice-detail-date"></time>
+        <div id="notice-detail-body" class="notice-detail-body"></div>
       </section>
     </div>
 
