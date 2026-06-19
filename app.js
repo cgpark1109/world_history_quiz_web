@@ -233,15 +233,48 @@ function bindEvents() {
 
 /** Android 뒤로가기: Flutter WebView에서 호출 */
 window.handleFlutterBack = function handleFlutterBack() {
-  if (state.currentScreen === 'home-screen') {
-    return false;
-  }
-  if (window.history.length > 1) {
-    window.history.back();
+  const popupBackdrop = document.getElementById('notice-popup-backdrop');
+  if (popupBackdrop) {
+    const noticeId = popupBackdrop.dataset.noticeId;
+    if (noticeId) {
+      markNoticePopupDismissed(noticeId);
+    }
+    closeNoticePopup();
     return true;
   }
-  showScreen('home-screen', false);
-  return true;
+
+  switch (state.currentScreen) {
+    case 'home-screen':
+      return false;
+    case 'category-screen':
+      showScreen('home-screen', false);
+      maybeShowNoticePopup();
+      return true;
+    case 'stage-screen':
+      showScreen('category-screen', false);
+      return true;
+    case 'quiz-screen':
+      goToStageScreen();
+      return true;
+    case 'result-screen':
+      goToStageScreen();
+      return true;
+    case 'settings-screen':
+      showScreen(state.previousScreen || 'home-screen', false);
+      return true;
+    case 'notice-list-screen':
+      showScreen(state.previousScreen || 'home-screen', false);
+      if (state.currentScreen === 'home-screen') {
+        maybeShowNoticePopup();
+      }
+      return true;
+    case 'notice-detail-screen':
+      openNoticeList();
+      return true;
+    default:
+      showScreen('home-screen', false);
+      return true;
+  }
 };
 
 function ensureHintElement() {
@@ -1108,6 +1141,7 @@ function showNoticePopup(notice) {
   const backdrop = document.createElement('div');
   backdrop.id = 'notice-popup-backdrop';
   backdrop.className = 'notice-popup-backdrop';
+  backdrop.dataset.noticeId = notice.id;
 
   const modal = document.createElement('div');
   modal.className = 'notice-popup-modal';
