@@ -66,9 +66,13 @@ const TEXTS = {
   noticesTitle: { en: 'Notices', ko: '공지사항' },
   noticeEmpty: { en: 'No notices yet.', ko: '등록된 공지가 없습니다.' },
   noticeNew: { en: 'New', ko: '새 공지' },
+  noticeClose: { en: 'Close', ko: '닫기' },
+  noticeReadMore: { en: 'Read More', ko: '자세히 보기' },
+  noticePopupTag: { en: 'Notice', ko: '공지' },
 };
 
 const READ_NOTICES_KEY = 'readNoticeIds';
+const NOTICE_POPUP_DISMISSED_KEY = 'dismissedNoticePopupIds';
 
 const state = {
   currentEra: 'ancient',
@@ -363,6 +367,7 @@ async function selectStage(stage) {
 
 function goHome() {
   showScreen('home-screen');
+  maybeShowNoticePopup();
 }
 
 function getUnlockedStage() {
@@ -1014,6 +1019,7 @@ async function loadNotices() {
     ? data.filter((item) => item && item.id).sort((a, b) => String(b.date).localeCompare(String(a.date)))
     : [];
   updateNoticeBadge();
+  maybeShowNoticePopup();
 }
 
 function getReadNoticeIds() {
@@ -1065,6 +1071,111 @@ function formatNoticeDate(dateStr) {
 function getNoticeField(notice, field) {
   const localized = notice[`${field}_${state.language}`];
   return localized || notice[`${field}_en`] || '';
+}
+
+function getDismissedNoticePopupIds() {
+  try {
+    const raw = localStorage.getItem(NOTICE_POPUP_DISMISSED_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function markNoticePopupDismissed(noticeId) {
+  if (!noticeId) return;
+  const dismissed = getDismissedNoticePopupIds();
+  if (dismissed.includes(noticeId)) return;
+  dismissed.push(noticeId);
+  localStorage.setItem(NOTICE_POPUP_DISMISSED_KEY, JSON.stringify(dismissed));
+}
+
+function getLatestUnreadNotice() {
+  return state.notices.find((notice) => isNoticeUnread(notice.id)) || null;
+}
+
+function closeNoticePopup() {
+  const backdrop = document.getElementById('notice-popup-backdrop');
+  if (backdrop) backdrop.remove();
+}
+
+function showNoticePopup(notice) {
+  if (!notice) return;
+
+  closeNoticePopup();
+
+  const backdrop = document.createElement('div');
+  backdrop.id = 'notice-popup-backdrop';
+  backdrop.className = 'notice-popup-backdrop';
+
+  const modal = document.createElement('div');
+  modal.className = 'notice-popup-modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-labelledby', 'notice-popup-title');
+
+  const tag = document.createElement('span');
+  tag.className = 'notice-popup-tag';
+  tag.textContent = TEXTS.noticePopupTag[state.language];
+
+  const titleEl = document.createElement('h3');
+  titleEl.id = 'notice-popup-title';
+  titleEl.className = 'notice-popup-title';
+  titleEl.textContent = getNoticeField(notice, 'title');
+
+  const dateEl = document.createElement('time');
+  dateEl.className = 'notice-popup-date';
+  dateEl.textContent = formatNoticeDate(notice.date);
+
+  const bodyEl = document.createElement('div');
+  bodyEl.className = 'notice-popup-body';
+  bodyEl.textContent = getNoticeField(notice, 'body');
+
+  const actions = document.createElement('div');
+  actions.className = 'notice-popup-actions';
+
+  const closeBtn = document.createElement('button');
+  closeBtn.type = 'button';
+  closeBtn.className = 'notice-popup-btn notice-popup-btn-secondary';
+  closeBtn.textContent = TEXTS.noticeClose[state.language];
+
+  const readMoreBtn = document.createElement('button');
+  readMoreBtn.type = 'button';
+  readMoreBtn.className = 'notice-popup-btn notice-popup-btn-primary';
+  readMoreBtn.textContent = TEXTS.noticeReadMore[state.language];
+
+  const dismiss = () => {
+    markNoticePopupDismissed(notice.id);
+    closeNoticePopup();
+  };
+
+  closeBtn.addEventListener('click', dismiss);
+  readMoreBtn.addEventListener('click', () => {
+    dismiss();
+    state.previousScreen = 'home-screen';
+    openNoticeDetail(notice.id);
+  });
+
+  backdrop.addEventListener('click', (event) => {
+    if (event.target === backdrop) dismiss();
+  });
+
+  actions.append(closeBtn, readMoreBtn);
+  modal.append(tag, titleEl, dateEl, bodyEl, actions);
+  backdrop.appendChild(modal);
+  document.body.appendChild(backdrop);
+}
+
+function maybeShowNoticePopup() {
+  if (state.currentScreen !== 'home-screen') return;
+  if (document.getElementById('notice-popup-backdrop')) return;
+
+  const notice = getLatestUnreadNotice();
+  if (!notice) return;
+  if (getDismissedNoticePopupIds().includes(notice.id)) return;
+
+  showNoticePopup(notice);
 }
 
 function openNoticeList() {
