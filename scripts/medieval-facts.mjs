@@ -61,7 +61,7 @@ export const FACTS = {
   },
   196: {
     en: "Ivan III (1440–1505), called Ivan the Great, united Russian principalities around Moscow and refused tribute to the Golden Horde after the standoff on the Ugra River in 1480. He married Sophia Palaiologina, niece of the last Byzantine emperor, and adopted imperial symbols. His reign laid foundations for Muscovy as an independent tsardom.",
-    ko: "이반 3세(1440–1505), 대왕 이반은 모스크바를 중심으로 러시아 공국들을 통합하고 1480년 우그라 강 대치 이후 금 Horde(군)에 조공을 거부했습니다. 비잔틴 마지막 황제의 조카 소피아와 결혼하며 황제적 상징을 받아들였습니다. 그의 통치는 독립적 차르국가의 토대를 마련했습니다.",
+    ko: "이반 3세(1440–1505), 대왕 이반은 모스크바를 중심으로 러시아 공국들을 통합하고 1480년 우그라 강 대치 이후 키프차크 칸국에 조공을 거부했습니다. 비잔틴 마지막 황제의 조카 소피아와 결혼하며 황제적 상징을 받아들였습니다. 그의 통치는 독립적 차르국가의 토대를 마련했습니다.",
   },
   197: {
     en: "Dante Alighieri (1265–1321) wrote the Divine Comedy in Tuscan Italian, depicting a journey through Hell, Purgatory, and Paradise. His fusion of classical learning, Christian theology, and vernacular poetry helped establish Italian as a literary language. Dante remains a foundational figure in European literature and medieval political thought.",
@@ -221,7 +221,7 @@ export const FACTS = {
   },
   236: {
     en: "Rashid al-Din (1247–1318) was a Persian vizier under the Ilkhanate who compiled the Jami al-Tawarikh, a world history illustrated with art from multiple cultures. His patronage linked Mongol rulers to Islamic and Chinese scholarly traditions. He was executed amid court politics in 1318.",
-    ko: "라시드 앗 딘(1247–1318)은 일칸국의 페르시아 비즈르로 《集史》를 편찬해 여러 문화의 삽화와 함께 세계사를 정리했습니다. 몽골 지배층과 이슬람·중국 학문을 연결했습니다. 1318년 궁정 정치로 처형되었습니다.",
+    ko: "라시드 앗 딘(1247–1318)은 일칸국의 페르시아 비즈르로 《세계사》(Jami al-Tawarikh)를 편찬해 여러 문화의 삽화와 함께 세계사를 정리했습니다. 몽골 지배층과 이슬람·중국 학문을 연결했습니다. 1318년 궁정 정치로 처형되었습니다.",
   },
   237: {
     en: "Zheng He (1371–1433) was a Ming admiral who led seven treasure voyages across the Indian Ocean to Southeast Asia, South Asia, the Middle East, and East Africa. His fleets displayed Ming power and fostered tributary relations. The voyages ended after his death as Ming policy turned inward.",
@@ -241,7 +241,7 @@ export const FACTS = {
   },
   241: {
     en: "In 476, the Western Roman emperor Romulus Augustulus was deposed, traditionally marking the end of the Western Roman Empire. Germanic kingdoms replaced imperial rule in Italy, Gaul, and Hispania. The date symbolizes the shift from late antiquity to the medieval period in Europe.",
-    ko: "476년 서로마 황제 롬ulus 아우구스툴루스가 폐위되며 서로마 제국의 종말이 전통적으로 거론됩니다. 독일족 왕국이 이탈리아·갈리아·히스파니아를 대체했습니다. 이 해는 유럽에서 고대 말기에서 중세로 넘어가는 전환점으로 상징됩니다.",
+    ko: "476년 서로마 황제 로물루스 아우구스툴루스가 폐위되며 서로마 제국의 종말이 전통적으로 거론됩니다. 독일족 왕국이 이탈리아·갈리아·히스파니아를 대체했습니다. 이 해는 유럽에서 고대 말기에서 중세로 넘어가는 전환점으로 상징됩니다.",
   },
   242: {
     en: "The Battle of Hastings on 14 October 1066 ended Anglo-Saxon rule when William of Normandy defeated King Harold II. Norman knights, archers, and feudal organization reshaped England's elite and landholding. The victory inaugurated the Norman Conquest and lasting French influence on English law and language.",
@@ -433,7 +433,7 @@ export const FACTS = {
   },
   289: {
     en: "In 1480, Ivan III of Moscow faced the Golden Horde at the Ugra River and refused tribute, asserting Russian independence. The standoff ended Mongol overlordship over Muscovy. It marked a turning point toward the centralized Russian state.",
-    ko: "1480년 이반 3세는 우그라 강에서 금 Horde(군)와 대치하며 조공을 거부해 러시아 독립을 선언했습니다. 모스크바에 대한 몽골 종주권이 끝났습니다. 중앙집권 러시아 국가로 나아가는 전환점입니다.",
+    ko: "1480년 이반 3세는 우그라 강에서 키프차크 칸국와 대치하며 조공을 거부해 러시아 독립을 선언했습니다. 모스크바에 대한 몽골 종주권이 끝났습니다. 중앙집권 러시아 국가로 나아가는 전환점입니다.",
   },
   290: {
     en: "Savonarola's Bonfire of the Vanities in Florence in 1497 burned art, books, and luxury goods deemed immoral. The Dominican friar's moral campaign briefly dominated republican politics before his execution in 1498. It reflects tensions between Renaissance culture and religious reform.",
@@ -461,7 +461,7 @@ export const FACTS = {
   },
   296: {
     en: "The Battle of Kulikovo in 1380 saw Dmitry Donskoy's Muscovite-led forces defeat the Golden Horde, boosting Russian morale. Though not ending Mongol dominance immediately, it signaled rising Moscow. The victory became a foundation myth of Russian statehood.",
-    ko: "1380년 쿨리코보 전투에서 드미트리 돈스코이가 금 Horde(군)를 격파해 러시아 사기를 높였습니다. 즉시 몽골 지배가 끝나지는 않았으나 모스크바의 부상을 알렸습니다. 러시아 국가 형성의 기원 신화가 되었습니다.",
+    ko: "1380년 쿨리코보 전투에서 드미트리 돈스코이가 키프차크 칸국를 격파해 러시아 사기를 높였습니다. 즉시 몽골 지배가 끝나지는 않았으나 모스크바의 부상을 알렸습니다. 러시아 국가 형성의 기원 신화가 되었습니다.",
   },
   297: {
     en: "The Yongle Emperor began his reign in 1402 after deposing the Jianwen Emperor in the Yongle rebellion. His rule moved the capital to Beijing and launched maritime expeditions. Yongle era policies shaped Ming power at its medieval peak.",
@@ -573,7 +573,7 @@ export const FACTS = {
   },
   324: {
     en: "The Sicilian Vespers in 1282 was a rebellion against Angevin French rule in Sicily, massacring French officials and inviting Aragonese intervention. The uprising ended Capetian control and shifted Sicily toward the Crown of Aragon. It reshaped western Mediterranean politics.",
-    ko: "1282년 시칠리아 만종은 앙주 프랑스 지배에 맞선 반란으로 프랑스 관리를 학살하고 아라곤을 불렀습니다. 카페 지박이 끝나고 시칠리아는 아라곤 권역으로 편입되었습니다. 서부 지중해 정치를 재편했습니다.",
+    ko: "1282년 시칠리아 만종은 앙주 프랑스 지배에 맞선 반란으로 프랑스 관리를 학살하고 아라곤을 불렀습니다. 카페 지배이 끝나고 시칠리아는 아라곤 권역으로 편입되었습니다. 서부 지중해 정치를 재편했습니다.",
   },
   325: {
     en: "The Battle of Ayn Jalut in 1260 saw Mamluk forces defeat the Mongols in Palestine, halting Mongol expansion into the Levant. The victory preserved Mamluk Egypt and Syria. It is celebrated as a turning point in Islamic resistance to Mongol conquest.",
@@ -613,7 +613,7 @@ export const FACTS = {
   },
   334: {
     en: "The Mongol Invasion of Rus from the 1220s to 1260s subjugated Kievan principalities and imposed the Golden Horde's tribute system. Cities such as Kiev were sacked; princes became vassals. Mongol rule reshaped Russian politics, trade, and cultural orientation toward Byzantium and the steppe.",
-    ko: "1220–1260년대 몽골의 루스 침입은 키예프 공국을 복속시키고 금 Horde(군) 조공 체제를 부과했습니다. 키예프 등이 약탈되고 공작들이 신하가 되었습니다. 러시아 정치·무역·문화 방향을 재편했습니다.",
+    ko: "1220–1260년대 몽골의 루스 침입은 키예프 공국을 복속시키고 키프차크 칸국 조공 체제를 부과했습니다. 키예프 등이 약탈되고 공작들이 신하가 되었습니다. 러시아 정치·무역·문화 방향을 재편했습니다.",
   },
   335: {
     en: "The Wars of the Roses (1455–1487) were civil wars between Yorkist and Lancastrian claimants to the English throne. Battles such as Towton and Bosworth devastated the nobility. Tudor victory in 1485 ended Plantagenet rule and began a new dynasty.",
@@ -629,7 +629,7 @@ export const FACTS = {
   },
   338: {
     en: "The Battle of Kulikovo in 1380 saw Dmitry Donskoy defeat the Golden Horde, signaling Moscow's growing strength. Though Mongol tribute continued for decades, Russian princes gained confidence. The battle became a cornerstone of Muscovite national mythology.",
-    ko: "1380년 쿨리코보 전투에서 드미트리 돈스코이가 금 Horde(군)를 격파하며 모스크바의 성장을 알렸습니다. 조공은 이어졌으나 러시아 공작들의 자신감이 커졌습니다. 모스크바 민족 신화의 초석이 되었습니다.",
+    ko: "1380년 쿨리코보 전투에서 드미트리 돈스코이가 키프차크 칸국를 격파하며 모스크바의 성장을 알렸습니다. 조공은 이어졌으나 러시아 공작들의 자신감이 커졌습니다. 모스크바 민족 신화의 초석이 되었습니다.",
   },
   339: {
     en: "The Western Schism (1378–1417) divided Christendom with rival popes in Rome and Avignon, later a third in Pisa. The crisis undermined papal prestige and required the Council of Constance to resolve. It accelerated demands for church reform before the Reformation.",
@@ -689,11 +689,11 @@ export const FACTS = {
   },
   353: {
     en: "The Diet of Roncaglia in 1158 asserted Frederick Barbarossa's imperial jurisdiction over Lombard communes and regalia. The assembly provoked resistance from Italian cities and leagues. It intensified the struggle between emperors and urban autonomy in Italy.",
-    ko: "1158년 론칠리아 제국회의는 바르바로사의 롬바르디 공동체·국왕 재산권 주장을 선언했습니다. 도시 연맹의 저항을 촉발했습니다. 이탈리아 황제권과 도시 자치 갈등을 심화시켰습니다.",
+    ko: "1158년 론칼리아 제국회의는 바르바로사의 롬바르디 공동체·국왕 재산권 주장을 선언했습니다. 도시 연맹의 저항을 촉발했습니다. 이탈리아 황제권과 도시 자치 갈등을 심화시켰습니다.",
   },
   354: {
     en: "The Nanboku-chō Conflict in fourteenth-century Japan split the imperial line into Northern and Southern courts after the fall of Kamakura. Ashikaga and loyalist factions fought for legitimacy. The war ended gradually as the Ashikaga shogunate consolidated power.",
-    ko: "14세기 남북조 내전은 가마쿠라 막부 붕괴 뒤 천황계가 남·북으로 갈라진 내전이었습니다. 아시카가와 충성파가 정통성을 다투었습니다. 아시카가 막부가 권력을 굳히며 점차 종결되었습니다.",
+    ko: "14세기 남북조 내전은 가마쿠라 막부 붕괴 뒤 천황계가 남·북으로 갈라진 내전이었습니다. 아시카가 충성파가 정통성을 다투었습니다. 아시카가 막부가 권력을 굳히며 점차 종결되었습니다.",
   },
   355: {
     en: "The Ciompi Revolt in 1378 saw wool-carders and other workers briefly seize power in Florence's government. The uprising reflected economic grievances in a major textile center. Though short-lived, it is a rare example of urban labor revolt in medieval Italy.",

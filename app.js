@@ -4,7 +4,8 @@ const ERAS = ['ancient', 'medieval', 'early_modern', 'modern1', 'contemporary'];
 const CATEGORIES = ['person', 'year', 'event'];
 const TOTAL_STAGES = 6;
 const ERA_TOTAL_STAGES = {
-  ancient: 8,
+  ancient: 10,
+  medieval: 10,
 };
 const QUESTIONS_PER_SESSION = 10;
 
