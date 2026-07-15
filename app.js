@@ -6,6 +6,9 @@ const TOTAL_STAGES = 6;
 const ERA_TOTAL_STAGES = {
   ancient: 10,
   medieval: 10,
+  early_modern: 10,
+  modern1: 10,
+  contemporary: 10,
 };
 const QUESTIONS_PER_SESSION = 10;
 
